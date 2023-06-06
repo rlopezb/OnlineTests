@@ -1,13 +1,26 @@
 import axios from "axios";
-import {useNavigate} from "react-router-dom";
+import {Navigate, useNavigate} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 import {Button, Col, Container, Row} from "react-bootstrap";
+import {toast} from "react-toastify";
+import {useEffect} from "react";
 
 function Review() {
   let quiz = useSelector(gs => gs.quiz);
   let selections = useSelector(gs => gs.selections);
   const navigate = useNavigate();
   let dispatch = useDispatch();
+
+  if (Object.keys(quiz).length === 0 && quiz.constructor === Object) {
+    toast.error("No quiz selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+  if (selections.length === 0) {
+    toast.error("No answers selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
 
   let getAnswers = function () {
     return dispatch => {
@@ -18,7 +31,7 @@ function Review() {
             navigate('/results');
           })
           .catch(error => {
-            console.log(error);
+            toast.error(error.message);
           });
     };
   };
@@ -44,7 +57,7 @@ function Review() {
       let options = q.option;
       let selection = selections.find(s => s.questionId === questionId);
       let selectionId = selection.selectionId;
-      let selected = options.find(o=>o.id === selectionId);
+      let selected = options.find(o => o.id === selectionId);
       return <Row key={q.id}>
         <h6 className="mt-4">{questionId + ".- " + question}</h6>
         <i>Selected answer: {selected.id}.- {selected.option}</i>

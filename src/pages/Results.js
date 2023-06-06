@@ -1,7 +1,9 @@
 import {Button, Col, Container, Row} from "react-bootstrap";
 import {useDispatch, useSelector} from "react-redux";
 import Check from "../components/Check";
-import {useNavigate} from "react-router-dom";
+import {Navigate, useNavigate} from "react-router-dom";
+import {useEffect} from "react";
+import {toast} from "react-toastify";
 
 function Results() {
   let quiz = useSelector(gs => gs.quiz);
@@ -9,6 +11,22 @@ function Results() {
   let answers = useSelector(gs => gs.answers);
   const navigate = useNavigate();
   let dispatch = useDispatch();
+
+  if (Object.keys(quiz).length === 0 && quiz.constructor === Object) {
+    toast.error("No quiz selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+  if (selections.length === 0) {
+    toast.error("No answers selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+  if (answers.length === 0) {
+    toast.error("No answers retrieved");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
 
   let onFinish = () => {
     dispatch({type: 'SET_STEP', payload: 0})

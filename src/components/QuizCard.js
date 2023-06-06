@@ -2,6 +2,7 @@ import {Button, Card} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import axios from "axios";
 import {useDispatch} from "react-redux";
+import {toast} from "react-toastify";
 
 function QuizCard(props) {
   const navigate = useNavigate();
@@ -17,7 +18,7 @@ function QuizCard(props) {
             navigate('/quiz');
           })
           .catch(error => {
-            console.log(error);
+            toast.error(error.message);
           });
     };
   }

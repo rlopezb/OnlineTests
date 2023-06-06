@@ -3,6 +3,7 @@ import QuizCard from "../components/QuizCard";
 import {useEffect} from "react";
 import {Col, Container, Row} from "react-bootstrap";
 import axios from "axios";
+import {toast} from "react-toastify";
 
 function Home() {
   let quizzes = useSelector(gs => gs.quizzes);
@@ -14,7 +15,7 @@ function Home() {
             dispatch({type: "SET_QUIZZES", payload: result.data});
           })
           .catch(error => {
-            console.log(error);
+            toast.error(error.message);
           });
     };
   }
