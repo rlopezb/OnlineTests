@@ -1,0 +1,5963 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "title": "Docker basic quiz",
+      "description": "Answer some easy questions regarding Docker!",
+      "img": "img/docker.png",
+      "category": "Docker",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 2,
+      "title": "MySQL basic quiz",
+      "description": "Answer some easy questions regarding MySQL!",
+      "img": "img/mysql.png",
+      "category": "MySQL",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 3,
+      "title": "Linux basic quiz",
+      "description": "Answer some easy questions regarding Linux!",
+      "img": "img/linux.png",
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 4,
+      "title": "DevOps basic quiz",
+      "description": "Answer some easy questions regarding DevOps!",
+      "img": "img/devops.png",
+      "category": "DevOps",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 5,
+      "title": "Coding basic quiz",
+      "description": "Answer some easy questions regarding Coding!",
+      "img": "img/coding.png",
+      "category": "Code",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 6,
+      "title": "CMS basic quiz",
+      "description": "Answer some easy questions regarding CMS!",
+      "img": "img/cms.png",
+      "category": "CMS",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 7,
+      "title": "Mysql medium quiz",
+      "description": "Answer some difficult questions regarding MySQL!",
+      "img": "img/mysql.png",
+      "category": "MySQL",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 8,
+      "title": "Coding medium quiz",
+      "description": "Answer some dificult questions regarding Coding!",
+      "img": "img/coding.png",
+      "category": "Code",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 9,
+      "title": "Linux medium quiz",
+      "description": "Answer some difficult questions regarding Linux!",
+      "img": "img/linux.png",
+      "category": "Linux",
+      "difficulty": "Easy"
+    },
+    {
+      "id": 10,
+      "title": "DevOps medium quiz",
+      "description": "Answer some difficult questions regarding DevOps!",
+      "img": "img/devops.png",
+      "category": "DevOps",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 11,
+      "title": "Docker medium quiz",
+      "description": "Answer some difficult questions regarding Docker!",
+      "img": "img/docker.png",
+      "category": "Docker",
+      "difficulty": "Medium"
+    },
+    {
+      "id": 12,
+      "title": "CMS medium quiz",
+      "description": "Answer some difficult questions regarding CMS!",
+      "img": "img/cms.png",
+      "category": "CMS",
+      "difficulty": "Medium"
+    }
+  ],
+  "quiz": [
+    {
+      "id": 1,
+      "question": [
+        {
+          "id": 1,
+          "question": "What does the COPY instruction do in a Dockerfile?",
+          "option": [
+            {
+              "id": 1,
+              "option": "COPY makes a copy of your Dockerfile"
+            },
+            {
+              "id": 2,
+              "option": "COPY adds files from your Docker client’s current directory"
+            },
+            {
+              "id": 3,
+              "option": "COPY creates a copy of your running container"
+            },
+            {
+              "id": 4,
+              "option": "COPY creates a copy of your image"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Suppose you have 3 containers running and out of these, you wish to access one of them. How do you access a running container?",
+          "option": [
+            {
+              "id": 1,
+              "option": "$ docker exec it <container id> bash"
+            },
+            {
+              "id": 2,
+              "option": "$ docker exec --it <container id>"
+            },
+            {
+              "id": 3,
+              "option": "$ docker exec -it <container id> bash"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Docker containers can run on:",
+          "option": [
+            {
+              "id": 1,
+              "option": "Only Linux distributions"
+            },
+            {
+              "id": 2,
+              "option": "Linux distributions and Windows systems"
+            },
+            {
+              "id": 3,
+              "option": "Only Windows systems"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "How can you find the status of a Docker container?",
+          "option": [
+            {
+              "id": 1,
+              "option": "The command “docker ps -a” is used for identifying the status of a Docker container."
+            },
+            {
+              "id": 2,
+              "option": "The command “docker ps status” is used for identifying the status of a Docker container."
+            },
+            {
+              "id": 3,
+              "option": "The command “docker ps -p” is used for identifying the status of a Docker container."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Docker can build images automatically by reading the instructions from:",
+          "option": [
+            {
+              "id": 1,
+              "option": "docker.config"
+            },
+            {
+              "id": 2,
+              "option": "docker.json"
+            },
+            {
+              "id": 3,
+              "option": "docker.yaml"
+            },
+            {
+              "id": 4,
+              "option": "Dockerfile"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which command would show you the logs of a running pod in Kubernetes?",
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl print pod-name"
+            },
+            {
+              "id": 2,
+              "option": "kubectl log pod-name"
+            },
+            {
+              "id": 3,
+              "option": "kubectl show -l pod-name"
+            },
+            {
+              "id": 4,
+              "option": "kubectl logs pod-name"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "If you exit a container accidentally, will you lose all the work?",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command will you use to update a Kubernetes deployment?",
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl setimage deployment/Deployment tomcat = tomcat:6.0"
+            },
+            {
+              "id": 2,
+              "option": "kubectl --setimage deployment/Deployment tomcat = tomcat:6.0"
+            },
+            {
+              "id": 3,
+              "option": "kubectl setimage deploy/Deployment tomcat = tomcat:6.0"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which is not true about Docker Hub?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Docker Hub is the world's largest library and community for container images"
+            },
+            {
+              "id": 2,
+              "option": "Docker Hub provides an easy way to create, manage, and deliver your teams' container applications"
+            },
+            {
+              "id": 3,
+              "option": "Docker Hub is a totally private repository"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What is the name of the enterprise-grade cluster management solution from Docker?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Docker Swarm"
+            },
+            {
+              "id": 2,
+              "option": "Docker Hub"
+            },
+            {
+              "id": 3,
+              "option": "Docker Web UI"
+            },
+            {
+              "id": 4,
+              "option": "Docker Universal Control Plane"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": [
+        {
+          "id": 1,
+          "question": "Null is used as a place holder for optional fields",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "MySQL workbench decreases the productivity of a MySQL developer compared to other server access tools such as phpMyAdmin?",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "MySQL does not support auto generating numbers",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What does SQL stands for?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Structure query language"
+            },
+            {
+              "id": 2,
+              "option": "Strong question language"
+            },
+            {
+              "id": 3,
+              "option": "Structured question language"
+            },
+            {
+              "id": 4,
+              "option": "Separate query language"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "MySQL supports multiple database storage engines.",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "A systematic collection of data stored in a central location is known as?",
+          "option": [
+            {
+              "id": 1,
+              "option": "CSV"
+            },
+            {
+              "id": 2,
+              "option": "Flat file"
+            },
+            {
+              "id": 3,
+              "option": "Database"
+            },
+            {
+              "id": 4,
+              "option": "Excel"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which keyword is used with the ALTER command to delete a column?",
+          "option": [
+            {
+              "id": 1,
+              "option": "DROP"
+            },
+            {
+              "id": 2,
+              "option": "DELETE"
+            },
+            {
+              "id": 3,
+              "option": "REMOVE"
+            },
+            {
+              "id": 4,
+              "option": "CHANGE"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "To use MySQL on your computer, you'll need",
+          "option": [
+            {
+              "id": 1,
+              "option": "Perl, PHP Or Java"
+            },
+            {
+              "id": 2,
+              "option": "FTP And Telnet"
+            },
+            {
+              "id": 3,
+              "option": "Some Sort Of Client Program To Access The Databases"
+            },
+            {
+              "id": 4,
+              "option": "A Browser"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which of these is not a valid name for a column",
+          "option": [
+            {
+              "id": 1,
+              "option": "To"
+            },
+            {
+              "id": 2,
+              "option": "Near"
+            },
+            {
+              "id": 3,
+              "option": "Far"
+            },
+            {
+              "id": 4,
+              "option": "From"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What does the WHERE SQL operator does:",
+          "option": [
+            {
+              "id": 1,
+              "option": "restricts the set of rows to the selection of those records for which the condition is true"
+            },
+            {
+              "id": 2,
+              "option": "converts the value of a column or function to a different type"
+            },
+            {
+              "id": 3,
+              "option": "changes the order of output rows"
+            },
+            {
+              "id": 4,
+              "option": "eliminates all row repeats from the result set"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": [
+        {
+          "id": 1,
+          "question": "What is the login name of the administrator in Linux?",
+          "option": [
+            {
+              "id": 1,
+              "option": "root"
+            },
+            {
+              "id": 2,
+              "option": "administrator"
+            },
+            {
+              "id": 3,
+              "option": "admin"
+            },
+            {
+              "id": 4,
+              "option": "All of the mentioned"
+            },
+            {
+              "id": 5,
+              "option": "None of the mentioned"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which is the best tool to use for logging in remotely?",
+          "option": [
+            {
+              "id": 1,
+              "option": "rsh"
+            },
+            {
+              "id": 2,
+              "option": "ssh"
+            },
+            {
+              "id": 3,
+              "option": "telnet"
+            },
+            {
+              "id": 4,
+              "option": "login"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "How do we change permissions on files",
+          "option": [
+            {
+              "id": 1,
+              "option": "chown"
+            },
+            {
+              "id": 2,
+              "option": "chmod"
+            },
+            {
+              "id": 3,
+              "option": "chattr"
+            },
+            {
+              "id": 4,
+              "option": "lsattr"
+            },
+            {
+              "id": 5,
+              "option": "We Can't change them"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Which of the following is a command in Linux?",
+          "option": [
+            {
+              "id": 1,
+              "option": "w"
+            },
+            {
+              "id": 2,
+              "option": "x"
+            },
+            {
+              "id": 3,
+              "option": "t"
+            },
+            {
+              "id": 4,
+              "option": "All of the Above"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "How can we find the process name from its process id? Assume the Proccess ID is 1",
+          "option": [
+            {
+              "id": 1,
+              "option": "ps –p 1"
+            },
+            {
+              "id": 2,
+              "option": "find 1"
+            },
+            {
+              "id": 3,
+              "option": "top 1"
+            },
+            {
+              "id": 4,
+              "option": "get 1"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which of these commands let you view current jobs being handled by Shell?",
+          "option": [
+            {
+              "id": 1,
+              "option": "view"
+            },
+            {
+              "id": 2,
+              "option": "jobs"
+            },
+            {
+              "id": 3,
+              "option": "show"
+            },
+            {
+              "id": 4,
+              "option": "execute"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "What could be used to program additional authentication logic besides available authenticator modules?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Kube Vault"
+            },
+            {
+              "id": 2,
+              "option": "Authentication Proxy"
+            },
+            {
+              "id": 3,
+              "option": "Kube Auth Service"
+            },
+            {
+              "id": 4,
+              "option": "Kubernetes Role Manager"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command can be used to display basic information about your server?",
+          "option": [
+            {
+              "id": 1,
+              "option": "uname"
+            },
+            {
+              "id": 2,
+              "option": "info"
+            },
+            {
+              "id": 3,
+              "option": "ls"
+            },
+            {
+              "id": 4,
+              "option": "show"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "You are logged in as a normal user and you see a file with 444(-r--r--r--) permission. Can you delete it with the `rm` command?",
+          "option": [
+            {
+              "id": 1,
+              "option": "We can't be certain, it depends on the permissions of the parent folder"
+            },
+            {
+              "id": 2,
+              "option": "Yes, can delete it without a problem"
+            },
+            {
+              "id": 3,
+              "option": "No, we don't have the proper permissions"
+            },
+            {
+              "id": 4,
+              "option": "We can delete it only from the GUI but not from CLI."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Where are the online repositories configured on a Debian/Ubuntu Machine",
+          "option": [
+            {
+              "id": 1,
+              "option": "/etc/apt/sources.list"
+            },
+            {
+              "id": 2,
+              "option": "/etc/apt/yum.repos"
+            },
+            {
+              "id": 3,
+              "option": "/etc/fstab"
+            },
+            {
+              "id": 4,
+              "option": "/etc/apt/repos"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": [
+        {
+          "id": 1,
+          "question": "What language is an Ansible playbooks are written in by default?",
+          "option": [
+            {
+              "id": 1,
+              "option": "YAML format"
+            },
+            {
+              "id": 2,
+              "option": "JSON format"
+            },
+            {
+              "id": 3,
+              "option": "XML format"
+            },
+            {
+              "id": 4,
+              "option": "HTML format"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which of the following are core Kubernetes objects?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Pods, Services, Volumes"
+            },
+            {
+              "id": 2,
+              "option": "Pods, Docker, Volumes"
+            },
+            {
+              "id": 3,
+              "option": "Pods, Services, Droplets"
+            },
+            {
+              "id": 4,
+              "option": "None of the mentioned"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which Process Validates And Configures Data For The Api Objects Like Pods, Services?",
+          "option": [
+            {
+              "id": 1,
+              "option": "kube-apiserver process validates and configures data for the api objects."
+            },
+            {
+              "id": 2,
+              "option": "kube-apiserver process validates and configures data for the gui objects."
+            },
+            {
+              "id": 3,
+              "option": "kube-apiserver process validates and configures data for the cli objects."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "How to list all pods that are either labelled with env=development or with env=production",
+          "option": [
+            {
+              "id": 1,
+              "option": "$ kubectl get pods -l 'env in (production, development)'"
+            },
+            {
+              "id": 2,
+              "option": "$ kubectl get pods 'env in (production, development)'"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Egress is incorrectly speed Ingress",
+          "option": [
+            {
+              "id": 1,
+              "option": "false"
+            },
+            {
+              "id": 2,
+              "option": "true"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which Process Runs On Kubernetes Master Node?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Kube-cli-proxy process runs on Kubernetes master node."
+            },
+            {
+              "id": 2,
+              "option": "Kube-cli-server process runs on Kubernetes master node."
+            },
+            {
+              "id": 3,
+              "option": "Kube-apiserver process runs on Kubernetes master node."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "At its core, Kubernetes is a platform for:",
+          "option": [
+            {
+              "id": 1,
+              "option": "Provisioning machines (similar to Puppet, Ansible)"
+            },
+            {
+              "id": 2,
+              "option": "Running and scheduling container applications on a cluster"
+            },
+            {
+              "id": 3,
+              "option": "Packaging software in containers"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "You can also get the Ansible documentation directly via your terminal by using:",
+          "option": [
+            {
+              "id": 1,
+              "option": "ansible-doc"
+            },
+            {
+              "id": 2,
+              "option": "ansible --doc"
+            },
+            {
+              "id": 3,
+              "option": "ansible -d"
+            },
+            {
+              "id": 4,
+              "option": "ansible-documentation"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "This volume type can be used to share contents within containers in a pod, but will not persist beyond the life of a pod.",
+          "option": [
+            {
+              "id": 1,
+              "option": "EmptyDir"
+            },
+            {
+              "id": 2,
+              "option": "Local"
+            },
+            {
+              "id": 3,
+              "option": "ConfigMap"
+            },
+            {
+              "id": 4,
+              "option": "FlexVolume"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "The default Ansible inventory file is located at:",
+          "option": [
+            {
+              "id": 1,
+              "option": "/home/ansible/inventory"
+            },
+            {
+              "id": 2,
+              "option": "/etc/ansible/inventory"
+            },
+            {
+              "id": 3,
+              "option": "/home/ansible/hosts"
+            },
+            {
+              "id": 4,
+              "option": "/etc/ansible/hosts"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": [
+        {
+          "id": 1,
+          "question": "Which of the following type of variables are whole numbers, without a decimal point, like 4195?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Integers"
+            },
+            {
+              "id": 2,
+              "option": "Doubles"
+            },
+            {
+              "id": 3,
+              "option": "Booleans"
+            },
+            {
+              "id": 4,
+              "option": "Strings"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is correct about PHP?",
+          "option": [
+            {
+              "id": 1,
+              "option": "PHP is a recursive acronym for \"PHP: Hypertext Preprocessor\"."
+            },
+            {
+              "id": 2,
+              "option": "PHP is a server side scripting language that is embedded in HTML."
+            },
+            {
+              "id": 3,
+              "option": "It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites."
+            },
+            {
+              "id": 4,
+              "option": "All of the mentioned."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which artisan command will you used to enable maintenance mode in Laravel?",
+          "option": [
+            {
+              "id": 1,
+              "option": "php artisan maintenance"
+            },
+            {
+              "id": 2,
+              "option": "php artisan down"
+            },
+            {
+              "id": 3,
+              "option": "php artisan stop"
+            },
+            {
+              "id": 4,
+              "option": "php artisan pause"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What is Laravel?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Laravel is an open-source widely used PHP framework."
+            },
+            {
+              "id": 2,
+              "option": "Laravel is an open-source widely used JavaScript framework."
+            },
+            {
+              "id": 3,
+              "option": "Laravel is an open-source widely used Python framework."
+            },
+            {
+              "id": 4,
+              "option": "Laravel is an open-source widely used Ruby framework."
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "How can you make A bulleted list with numbers?",
+          "option": [
+            {
+              "id": 1,
+              "option": "<dl>"
+            },
+            {
+              "id": 2,
+              "option": "<ul>"
+            },
+            {
+              "id": 3,
+              "option": "<ol>"
+            },
+            {
+              "id": 4,
+              "option": "<list>"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which of the following method can be used to create a MySql database using PHP?",
+          "option": [
+            {
+              "id": 1,
+              "option": "mysql_connect()"
+            },
+            {
+              "id": 2,
+              "option": "mysql_query()"
+            },
+            {
+              "id": 3,
+              "option": "mysql_close()"
+            },
+            {
+              "id": 4,
+              "option": "None of the mentioned"
+            },
+            {
+              "id": 5,
+              "option": "mysql_create()"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Can we export data into an Excel file?",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which artisan command would you use to create a new Laravel Model?",
+          "option": [
+            {
+              "id": 1,
+              "option": "php artisan create:model ModelName"
+            },
+            {
+              "id": 2,
+              "option": "php artisan model:make ModelName"
+            },
+            {
+              "id": 3,
+              "option": "php artisan model create ModelName"
+            },
+            {
+              "id": 4,
+              "option": "php artisan make:model ModelName"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "What type of a language is HTML?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Scripting Language"
+            },
+            {
+              "id": 2,
+              "option": "Markup Language"
+            },
+            {
+              "id": 3,
+              "option": "Programming Language"
+            },
+            {
+              "id": 4,
+              "option": "Network Protocol"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "How can we determine the number of rows returned in the result set of a MySQL query?",
+          "option": [
+            {
+              "id": 1,
+              "option": "The function mysqli_get_rows() returns the number of rows in a result set."
+            },
+            {
+              "id": 2,
+              "option": "The function mysqli_num_rows() returns the number of rows in a result set."
+            },
+            {
+              "id": 3,
+              "option": "The function mysqli_count_rows() returns the number of rows in a result set."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": [
+        {
+          "id": 1,
+          "question": "Who developed WordPress?",
+          "option": [
+            {
+              "id": 1,
+              "option": "WordPress was co-founded by Allen Mullenweg and Luke Little on the 27th of June 2003."
+            },
+            {
+              "id": 2,
+              "option": "WordPress was co-founded by Matt Mullenweg and Mike Little on the 27th of May 2003."
+            },
+            {
+              "id": 3,
+              "option": "WordPress was co-founded by Andrew Mclean and Mike Hathaway on the 24th of May 2003."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "What are categories in WordPress.",
+          "option": [
+            {
+              "id": 1,
+              "option": "Categories allow a user to divide its content into different sections."
+            },
+            {
+              "id": 2,
+              "option": "Categories allow a user to merge its content from different sections."
+            },
+            {
+              "id": 3,
+              "option": "Categories allow a user to list out all the contents"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between character 23 and x23?",
+          "option": [
+            {
+              "id": 1,
+              "option": "23 specifies the octal 23 and x23 determine the hex 23."
+            },
+            {
+              "id": 2,
+              "option": "23 specifies the hex 23 and x23 determine the octal 23"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What is the prefix of WordPress tables by default?",
+          "option": [
+            {
+              "id": 1,
+              "option": "wp_ default"
+            },
+            {
+              "id": 2,
+              "option": "wp_"
+            },
+            {
+              "id": 3,
+              "option": "wp_ in"
+            },
+            {
+              "id": 4,
+              "option": "_wp_"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What is the highest privilege user in Wordpress?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Contributer"
+            },
+            {
+              "id": 2,
+              "option": "Author"
+            },
+            {
+              "id": 3,
+              "option": "Editor"
+            },
+            {
+              "id": 4,
+              "option": "Administrator"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "In which programming language WordPress is written?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Java"
+            },
+            {
+              "id": 2,
+              "option": "Node"
+            },
+            {
+              "id": 3,
+              "option": "PHP"
+            },
+            {
+              "id": 4,
+              "option": "Javascript"
+            },
+            {
+              "id": 5,
+              "option": "VueJS"
+            },
+            {
+              "id": 6,
+              "option": "Python"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "What is Gravatar?",
+          "option": [
+            {
+              "id": 1,
+              "option": "A Plugin"
+            },
+            {
+              "id": 2,
+              "option": "Globally Recognized Image or Photo"
+            },
+            {
+              "id": 3,
+              "option": "CMS"
+            },
+            {
+              "id": 4,
+              "option": "Profile Image"
+            },
+            {
+              "id": 5,
+              "option": "WordPress core functionality"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "What is a Child Theme?",
+          "option": [
+            {
+              "id": 1,
+              "option": "The child theme is an extension of the sub-child theme"
+            },
+            {
+              "id": 2,
+              "option": "The child theme is an extension of the parent theme"
+            },
+            {
+              "id": 3,
+              "option": "The child theme is an extension of the super parent theme"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which CMS powers around 35% of all websites on the internet?",
+          "option": [
+            {
+              "id": 1,
+              "option": "WordPress"
+            },
+            {
+              "id": 2,
+              "option": "Dropal"
+            },
+            {
+              "id": 3,
+              "option": "Joomla"
+            },
+            {
+              "id": 4,
+              "option": "Laravel"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "You can change your Wordpress themes using?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Wordpress Appearance"
+            },
+            {
+              "id": 2,
+              "option": "Wordpress Settings"
+            },
+            {
+              "id": 3,
+              "option": "Wordpress Plugins"
+            },
+            {
+              "id": 4,
+              "option": "wp-config.php file"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": [
+        {
+          "id": 1,
+          "question": "In order to add a new column to an existing table in SQL, which command do we need to use?",
+          "option": [
+            {
+              "id": 1,
+              "option": "MODIFY TABLE"
+            },
+            {
+              "id": 2,
+              "option": "ALTER COLUMNS"
+            },
+            {
+              "id": 3,
+              "option": "ALTER TABLE"
+            },
+            {
+              "id": 4,
+              "option": "EDIT TABLE"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "To use 'mysqldbcopy' which privileges are required on the source server?",
+          "option": [
+            {
+              "id": 1,
+              "option": "CREATE"
+            },
+            {
+              "id": 2,
+              "option": "UPDATE"
+            },
+            {
+              "id": 3,
+              "option": "SELECT"
+            },
+            {
+              "id": 4,
+              "option": "INSERT"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which function is used to get the current time in mysql?",
+          "option": [
+            {
+              "id": 1,
+              "option": "getTime()"
+            },
+            {
+              "id": 2,
+              "option": "NOW()"
+            },
+            {
+              "id": 3,
+              "option": "Time()"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "MVD is known as",
+          "option": [
+            {
+              "id": 1,
+              "option": "Many Value Dependency"
+            },
+            {
+              "id": 2,
+              "option": "More Value Dependency"
+            },
+            {
+              "id": 3,
+              "option": "Multi Value Dependency"
+            },
+            {
+              "id": 4,
+              "option": "All of the Above"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "The UNION command is used to combine result sets from more than one query into a single result set",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "MySQL comes with a standard client libraries for:",
+          "option": [
+            {
+              "id": 1,
+              "option": "C Only"
+            },
+            {
+              "id": 2,
+              "option": "PHP And C"
+            },
+            {
+              "id": 3,
+              "option": "Perl,  Java And C"
+            },
+            {
+              "id": 4,
+              "option": "Java Only"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which declaration doesn't use the same number of bytes and consumption of bytes depending on the input data?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Varchar"
+            },
+            {
+              "id": 2,
+              "option": "None Of The Mentioned"
+            },
+            {
+              "id": 3,
+              "option": "Char"
+            },
+            {
+              "id": 4,
+              "option": "Both Varchar And Char"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command will delete a table called 'test':",
+          "option": [
+            {
+              "id": 1,
+              "option": "DROP TABLE test"
+            },
+            {
+              "id": 2,
+              "option": "DROP test"
+            },
+            {
+              "id": 3,
+              "option": "DROP test WHERE Confirm = \"YES\""
+            },
+            {
+              "id": 4,
+              "option": "DELETE test WHERE Confirm = \"YES\""
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which of the queries below will return 0 (false)?",
+          "option": [
+            {
+              "id": 1,
+              "option": "SELECT \"EXPERTRATING\" LIKE \"EXP%\""
+            },
+            {
+              "id": 2,
+              "option": "SELECT \"EXPERTRATING\" LIKE \"Exp%\""
+            },
+            {
+              "id": 3,
+              "option": "SELECT BINARY \"EXPERTRATING\" LIKE \"EXP%\""
+            },
+            {
+              "id": 4,
+              "option": "SELECT BINARY \"EXPERTRATING\" LIKE \"Exp%\""
+            },
+            {
+              "id": 5,
+              "option": "All those will return 1 (true)"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "INSERT keyword is used for:",
+          "option": [
+            {
+              "id": 1,
+              "option": "adding data"
+            },
+            {
+              "id": 2,
+              "option": "manage users"
+            },
+            {
+              "id": 3,
+              "option": "to select data"
+            },
+            {
+              "id": 4,
+              "option": "to change data"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": [
+        {
+          "id": 1,
+          "question": "Which function gives us the number of affected entries by a MySQL query?",
+          "option": [
+            {
+              "id": 1,
+              "option": "mysqli_affected_rows() return the number of entries affected by an SQL query."
+            },
+            {
+              "id": 2,
+              "option": "mysqli_rows() return the number of entries affected by an SQL query."
+            },
+            {
+              "id": 3,
+              "option": "mysqli_num_rows() return the number of entries affected by an SQL query."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "How can we start a PHP session:",
+          "option": [
+            {
+              "id": 1,
+              "option": "session_start()"
+            },
+            {
+              "id": 2,
+              "option": "start_session()"
+            },
+            {
+              "id": 3,
+              "option": "session()"
+            },
+            {
+              "id": 4,
+              "option": "startS()"
+            },
+            {
+              "id": 5,
+              "option": "sessionStart()"
+            },
+            {
+              "id": 6,
+              "option": "startSession()"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which of the following is used to add multiple line comments in PHP ?",
+          "option": [
+            {
+              "id": 1,
+              "option": "//"
+            },
+            {
+              "id": 2,
+              "option": "/* */"
+            },
+            {
+              "id": 3,
+              "option": "{{ }}"
+            },
+            {
+              "id": 4,
+              "option": "{/ \\}"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "How to get current year in PHP ?",
+          "option": [
+            {
+              "id": 1,
+              "option": "year = date(\"Year\");"
+            },
+            {
+              "id": 2,
+              "option": "year = date(\"Y\");"
+            },
+            {
+              "id": 3,
+              "option": "year = $date_(\"Y\");"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "What is the function file_get_contents() used for?",
+          "option": [
+            {
+              "id": 1,
+              "option": "file_get_contents() is used for reading a file and storing it in a string variable."
+            },
+            {
+              "id": 2,
+              "option": "file_get_contents() is used for parsing a file and storing it in a string variable."
+            },
+            {
+              "id": 3,
+              "option": "file_get_contents() is used for processing a file and storing it in a string variable."
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "To create a combo box (drop down box) which tag will you use?",
+          "option": [
+            {
+              "id": 1,
+              "option": "<select>"
+            },
+            {
+              "id": 2,
+              "option": "<list>"
+            },
+            {
+              "id": 3,
+              "option": "<input type=\"dropdown\">"
+            },
+            {
+              "id": 4,
+              "option": "all of above"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which functions can be used to get the image's properties (size, width, and height)?",
+          "option": [
+            {
+              "id": 1,
+              "option": "The functions are  getimagesize() for size, imagesx() for width and imagesy() for height."
+            },
+            {
+              "id": 2,
+              "option": "The functions are getimagesizeof() for size, imagesxn() for width and imagesyn() for height."
+            },
+            {
+              "id": 3,
+              "option": "The functions are  getsizeimage() for size, imagesx() for width and imagesy() for height."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "When you need to obtain the ASCII value of a character which of the following function you'll need to use in PHP?",
+          "option": [
+            {
+              "id": 1,
+              "option": "chr( );"
+            },
+            {
+              "id": 2,
+              "option": "val( );"
+            },
+            {
+              "id": 3,
+              "option": "ord( );"
+            },
+            {
+              "id": 4,
+              "option": ".asc( );"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": [
+        {
+          "id": 1,
+          "question": "When looking for all the processes running on a Linux system, what command should you use?",
+          "option": [
+            {
+              "id": 1,
+              "option": "service"
+            },
+            {
+              "id": 2,
+              "option": "oterm"
+            },
+            {
+              "id": 3,
+              "option": "ps"
+            },
+            {
+              "id": 4,
+              "option": "xrun"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which key combination can yank a line in vi?",
+          "option": [
+            {
+              "id": 1,
+              "option": "yw"
+            },
+            {
+              "id": 2,
+              "option": "yc"
+            },
+            {
+              "id": 3,
+              "option": "yy"
+            },
+            {
+              "id": 4,
+              "option": "yl"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "In Linux, the priority of a running process can be changed using which command?",
+          "option": [
+            {
+              "id": 1,
+              "option": "priority"
+            },
+            {
+              "id": 2,
+              "option": "renice"
+            },
+            {
+              "id": 3,
+              "option": "ps -A"
+            },
+            {
+              "id": 4,
+              "option": "passwd"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What does the /etc/hosts file contains?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Hostnames of all devices on the network segment"
+            },
+            {
+              "id": 2,
+              "option": "The IP address of the default gateway"
+            },
+            {
+              "id": 3,
+              "option": "CPU and memory info"
+            },
+            {
+              "id": 4,
+              "option": "IP addresses to hostnames mappings"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What is inode?",
+          "option": [
+            {
+              "id": 1,
+              "option": "A file is given a unique number by OS and is called as inode."
+            },
+            {
+              "id": 2,
+              "option": "A directory is given a unique number by OS and is called as inode."
+            },
+            {
+              "id": 3,
+              "option": "A file is given a predifined number by OS and is called as inode."
+            },
+            {
+              "id": 4,
+              "option": "A directory is given a predifined number by OS and is called as inode."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Crontab gives administrators the ability to do what?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Identify users on the system"
+            },
+            {
+              "id": 2,
+              "option": "Call up a list of open files"
+            },
+            {
+              "id": 3,
+              "option": "View the status of Linux kernel modules"
+            },
+            {
+              "id": 4,
+              "option": "Set up scheduled tasks on a system"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which command is used to print the directory stack?",
+          "option": [
+            {
+              "id": 1,
+              "option": "popd"
+            },
+            {
+              "id": 2,
+              "option": "dir"
+            },
+            {
+              "id": 3,
+              "option": "ls -d"
+            },
+            {
+              "id": 4,
+              "option": "dirs"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command is used to display the default permissions for newly created files?",
+          "option": [
+            {
+              "id": 1,
+              "option": "umask"
+            },
+            {
+              "id": 2,
+              "option": "priority"
+            },
+            {
+              "id": 3,
+              "option": "nice"
+            },
+            {
+              "id": 4,
+              "option": "perm"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What is the purpose of ‘at’ command?",
+          "option": [
+            {
+              "id": 1,
+              "option": "To execute a command/commands at a specific time."
+            },
+            {
+              "id": 2,
+              "option": "To execute a command/commands at a specific request."
+            },
+            {
+              "id": 3,
+              "option": "To execute a command/commands on a specific condition."
+            },
+            {
+              "id": 4,
+              "option": "To execute a command/commands only when the user has logged in."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": [
+        {
+          "id": 1,
+          "question": "What is the role of kube-apiserver and kube-scheduler?",
+          "option": [
+            {
+              "id": 1,
+              "option": "The kube – apiserver follows the scale-out architecture and, is the front-end of the master node control panel."
+            },
+            {
+              "id": 2,
+              "option": "The kube – apiserver follows the scale-out architecture and, is the back-end of the master node control panel."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "How do you create secrets in Kubernetes?",
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl create secret generic db-user-pass --from-file=./username.txt --from-file=./password.txt"
+            },
+            {
+              "id": 2,
+              "option": "kubectl generate secret generic db-user-pass --from-file=./username.txt --from-file=./password.txt"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "What used to be called a minion in Kubernetes cluster?",
+          "option": [
+            {
+              "id": 1,
+              "option": "A component of the master node."
+            },
+            {
+              "id": 2,
+              "option": "A monitoring engine used widely in Kubernetes."
+            },
+            {
+              "id": 3,
+              "option": "Docker container service."
+            },
+            {
+              "id": 4,
+              "option": "A worker node."
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Kubernetes helps in the effective distribution of resources by allocating the resources that are used by a particular application",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What are the different components of Kubernetes Architecture?",
+          "option": [
+            {
+              "id": 1,
+              "option": "The Kubernetes Architecture has mainly 2 components – the master node and the worker node."
+            },
+            {
+              "id": 2,
+              "option": "The Kubernetes Architecture has mainly 2 components – the service and the worker path."
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Kubernetes Manifests can be in JSON or YAML format",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which of the following commands would show you the status of a Kubernetes deployment?",
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl rollout stats deployment/Deployment"
+            },
+            {
+              "id": 2,
+              "option": "kubectl rollout status deployment/Deployment"
+            },
+            {
+              "id": 3,
+              "option": "kubectl rollout log deployment/Deployment"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "How to define a service without a selector?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Specify the external name"
+            },
+            {
+              "id": 2,
+              "option": "Specify an endpoint with IP"
+            },
+            {
+              "id": 3,
+              "option": "Address and port Just by specifying the IP address"
+            },
+            {
+              "id": 4,
+              "option": "Specifying the label and api-version"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "What is kubectl drain used for?",
+          "option": [
+            {
+              "id": 1,
+              "option": "To safely evict all of your pods from a node before performing maintenance on the node"
+            },
+            {
+              "id": 2,
+              "option": "To stop all running containers in a pod"
+            },
+            {
+              "id": 3,
+              "option": "To get the status of a specific node during maintenance"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What Are Kubernetes Controllers?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Kubernetes controllers are Replicaset, Deployment controller."
+            },
+            {
+              "id": 2,
+              "option": "Kubernetes controllers are Surverless, Deployment capacitor."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": [
+        {
+          "id": 1,
+          "question": "Containers running on a single machine all share the same operating system kernel, so they start instantly and make more efficient use of RAM.",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Docker containers and images are included in Plesk Backup and migrated by Plesk Migrator.",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "How to scale a service to 7 replicas in Docker Swarm?",
+          "option": [
+            {
+              "id": 1,
+              "option": "docker service scale name_of_your_service_here=7"
+            },
+            {
+              "id": 2,
+              "option": "docker service replica-set name_of_your_service_here=7"
+            },
+            {
+              "id": 3,
+              "option": "docker service update name_of_your_service_here=7"
+            },
+            {
+              "id": 4,
+              "option": "docker service upgrade name_of_your_service_here=7"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Is there a hard limit for the number of containers that you can run and if there is which is number of total containers that you can run?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Even though there is no limit of containers that can run on Docker, hardware limitations come into the picture."
+            },
+            {
+              "id": 2,
+              "option": "5"
+            },
+            {
+              "id": 3,
+              "option": "2"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Once you’ve worked with an image, how do you push it to docker hub?",
+          "option": [
+            {
+              "id": 1,
+              "option": "$ docker push <username image name>"
+            },
+            {
+              "id": 2,
+              "option": "$ docker push <username/image name>"
+            },
+            {
+              "id": 3,
+              "option": "$ docker --push <username image name>"
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "How do you create a docker container from an image?",
+          "option": [
+            {
+              "id": 1,
+              "option": "docker run -it -d <image_name>"
+            },
+            {
+              "id": 2,
+              "option": "docker --run -it -d <image_name>"
+            },
+            {
+              "id": 3,
+              "option": "docker run it d <image_name>"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "How to delete an image from the local storage system?",
+          "option": [
+            {
+              "id": 1,
+              "option": "$ docker rmi <image-id>"
+            },
+            {
+              "id": 2,
+              "option": "$ docker --rmi <image-id>"
+            },
+            {
+              "id": 3,
+              "option": "$ docker rmin <imageid>"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "On which of the following systems can minikube be installed on? Select one.",
+          "option": [
+            {
+              "id": 1,
+              "option": "Linux"
+            },
+            {
+              "id": 2,
+              "option": "Windows"
+            },
+            {
+              "id": 3,
+              "option": "macOS"
+            },
+            {
+              "id": 4,
+              "option": "All of the mentioned"
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Containers include the application and all of its dependencies, but share the kernel with other containers. They run as an isolated process in userspace on the host operating system.",
+          "option": [
+            {
+              "id": 1,
+              "option": "True"
+            },
+            {
+              "id": 2,
+              "option": "False"
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Following Docker command: eval $(docker-machine env default)  is used to:",
+          "option": [
+            {
+              "id": 1,
+              "option": "Activate default VM machine"
+            },
+            {
+              "id": 2,
+              "option": "Build an image"
+            },
+            {
+              "id": 3,
+              "option": "Access a running container"
+            },
+            {
+              "id": 4,
+              "option": "Commit changes done in a Docker image"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": [
+        {
+          "id": 1,
+          "question": "What are meta-tags?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Meta-tags are keywords and description used to display website or page information."
+            },
+            {
+              "id": 2,
+              "option": "Meta-tags are codes and scripts used to display website or page information."
+            },
+            {
+              "id": 3,
+              "option": "Meta-tags are special tages and function used to display website or page information."
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "What is a WordPress taxonomy?",
+          "option": [
+            {
+              "id": 1,
+              "option": "In WordPress, a “taxonomy” is a grouping mechanism for some posts (or links or custom post types)."
+            },
+            {
+              "id": 2,
+              "option": "In WordPress, a “taxonomy” is a grouping mechanism for some plugins ."
+            },
+            {
+              "id": 3,
+              "option": "In WordPress, a “taxonomy” is a grouping mechanism for some pages ."
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Why is wordpress.com considered more secure than wordpress.org?",
+          "option": [
+            {
+              "id": 1,
+              "option": "because they limit the themes and also does not allow installing plugins."
+            },
+            {
+              "id": 2,
+              "option": "because it is SSL encrypted"
+            },
+            {
+              "id": 3,
+              "option": "because they limit the site proxy settings"
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Which licensing authority is responsible for WordPress?",
+          "option": [
+            {
+              "id": 1,
+              "option": "GPLv2 (GNU General Public License)"
+            },
+            {
+              "id": 2,
+              "option": "MIT license"
+            },
+            {
+              "id": 3,
+              "option": "GPU"
+            },
+            {
+              "id": 4,
+              "option": "GWPL"
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What is the best way to change table prefix (wp_) before installation in WordPress?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Before Installation: In this way, you have to rename your wp_config.php file according to your need through $table_prefix=’wp_’;."
+            },
+            {
+              "id": 2,
+              "option": "Before Installation: Through this way, you have to go PHPMyAdmin -> Select your database -> Check all tables -> Add/Update table prefix."
+            },
+            {
+              "id": 3,
+              "option": "After Installation: Once you have the database, you can go ahead and change it"
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "How can you call a constructor for a parent class?",
+          "option": [
+            {
+              "id": 1,
+              "option": "Parents:: constructor($value)"
+            },
+            {
+              "id": 2,
+              "option": "Parents:: call_constructor($value)"
+            },
+            {
+              "id": 3,
+              "option": "Parents:: call($value)"
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Where is WordPress content stored?",
+          "option": [
+            {
+              "id": 1,
+              "option": "WordPress stores it's content in a MySQL database on the server."
+            },
+            {
+              "id": 2,
+              "option": "WordPress stores it's content in the wp-content folder"
+            },
+            {
+              "id": 3,
+              "option": "WordPress stores it's content in a MySQL database on the server."
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "What is the difference between WordPress Posts and Pages?",
+          "option": [
+            {
+              "id": 1,
+              "option": "There is no difference between Posts and Pages."
+            },
+            {
+              "id": 2,
+              "option": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date."
+            },
+            {
+              "id": 3,
+              "option": "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date."
+            },
+            {
+              "id": 4,
+              "option": "None of the above."
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "How can you edit a WordPress comment?",
+          "option": [
+            {
+              "id": 1,
+              "option": "You can edit WordPress comment using the command. From the panel, under the Comments option, select edit to edit a comment."
+            },
+            {
+              "id": 2,
+              "option": "You can edit WordPress comment using the dashboard. From the panel, under the Comments option, select edit to edit a comment."
+            },
+            {
+              "id": 3,
+              "option": "You can edit WordPress comment using the profile. From the panel, under the Comments option, select edit to edit a comment."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "answer": [
+    {
+      "id": 1,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 2
+        },
+        {
+          "id": 2,
+          "correctAnswer": 3
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 4
+        },
+        {
+          "id": 6,
+          "correctAnswer": 4
+        },
+        {
+          "id": 7,
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "correctAnswer": 3
+        },
+        {
+          "id": 10,
+          "correctAnswer": 4
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "correctAnswer": 3
+        },
+        {
+          "id": 7,
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "correctAnswer": 3
+        },
+        {
+          "id": 9,
+          "correctAnswer": 4
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "correctAnswer": 2
+        },
+        {
+          "id": 7,
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "correctAnswer": 3
+        },
+        {
+          "id": 7,
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 4
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 4
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 3
+        },
+        {
+          "id": 6,
+          "correctAnswer": 2
+        },
+        {
+          "id": 7,
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "correctAnswer": 4
+        },
+        {
+          "id": 9,
+          "correctAnswer": 2
+        },
+        {
+          "id": 10,
+          "correctAnswer": 2
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 2
+        },
+        {
+          "id": 2,
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "correctAnswer": 2
+        },
+        {
+          "id": 5,
+          "correctAnswer": 4
+        },
+        {
+          "id": 6,
+          "correctAnswer": 3
+        },
+        {
+          "id": 7,
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "correctAnswer": 2
+        },
+        {
+          "id": 9,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 3
+        },
+        {
+          "id": 2,
+          "correctAnswer": 3
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 3
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "correctAnswer": 3
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 2
+        },
+        {
+          "id": 6,
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 3
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 3
+        },
+        {
+          "id": 2,
+          "correctAnswer": 3
+        },
+        {
+          "id": 3,
+          "correctAnswer": 2
+        },
+        {
+          "id": 4,
+          "correctAnswer": 4
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "correctAnswer": 4
+        },
+        {
+          "id": 7,
+          "correctAnswer": 4
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "correctAnswer": 4
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 6,
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "correctAnswer": 2
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 2
+        },
+        {
+          "id": 3,
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 2
+        },
+        {
+          "id": 6,
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "correctAnswer": 4
+        },
+        {
+          "id": 9,
+          "correctAnswer": 1
+        },
+        {
+          "id": 10,
+          "correctAnswer": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "question": [
+        {
+          "id": 1,
+          "correctAnswer": 1
+        },
+        {
+          "id": 2,
+          "correctAnswer": 1
+        },
+        {
+          "id": 3,
+          "correctAnswer": 1
+        },
+        {
+          "id": 4,
+          "correctAnswer": 1
+        },
+        {
+          "id": 5,
+          "correctAnswer": 1
+        },
+        {
+          "id": 7,
+          "correctAnswer": 1
+        },
+        {
+          "id": 8,
+          "correctAnswer": 1
+        },
+        {
+          "id": 9,
+          "correctAnswer": 3
+        },
+        {
+          "id": 10,
+          "correctAnswer": 2
+        }
+      ]
+    }
+  ],
+  "bck": [
+    {
+      "id": 1,
+      "title": "Docker basic quiz",
+      "description": "Answer some easy questions regarding Docker!",
+      "img": "img/docker.png",
+      "category": "Docker",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "What does the COPY instruction do in a Dockerfile?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "COPY makes a copy of your Dockerfile",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "COPY adds files from your Docker client’s current directory",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "COPY creates a copy of your running container",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "COPY creates a copy of your image",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Suppose you have 3 containers running and out of these, you wish to access one of them. How do you access a running container?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "$ docker exec it <container id> bash",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "$ docker exec --it <container id>",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "$ docker exec -it <container id> bash",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Docker containers can run on:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Only Linux distributions",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Linux distributions and Windows systems",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "Only Windows systems",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "How can you find the status of a Docker container?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "The command “docker ps -a” is used for identifying the status of a Docker container.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "The command “docker ps status” is used for identifying the status of a Docker container.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "The command “docker ps -p” is used for identifying the status of a Docker container.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Docker can build images automatically by reading the instructions from:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "docker.config",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "docker.json",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "docker.yaml",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Dockerfile",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which command would show you the logs of a running pod in Kubernetes?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl print pod-name",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "kubectl log pod-name",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "kubectl show -l pod-name",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "kubectl logs pod-name",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "If you exit a container accidentally, will you lose all the work?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command will you use to update a Kubernetes deployment?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl setimage deployment/Deployment tomcat = tomcat:6.0",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "kubectl --setimage deployment/Deployment tomcat = tomcat:6.0",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "kubectl setimage deploy/Deployment tomcat = tomcat:6.0",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which is not true about Docker Hub?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Docker Hub is the world's largest library and community for container images",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Docker Hub provides an easy way to create, manage, and deliver your teams' container applications",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Docker Hub is a totally private repository",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What is the name of the enterprise-grade cluster management solution from Docker?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Docker Swarm",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Docker Hub",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Docker Web UI",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Docker Universal Control Plane",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "MySQL basic quiz",
+      "description": "Answer some easy questions regarding MySQL!",
+      "img": "img/mysql.png",
+      "category": "MySQL",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "Null is used as a place holder for optional fields",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "MySQL workbench decreases the productivity of a MySQL developer compared to other server access tools such as phpMyAdmin?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "MySQL does not support auto generating numbers",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What does SQL stands for?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Structure query language",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Strong question language",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Structured question language",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Separate query language",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "MySQL supports multiple database storage engines.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "A systematic collection of data stored in a central location is known as?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "CSV",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Flat file",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Database",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "Excel",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which keyword is used with the ALTER command to delete a column?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "DROP",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "DELETE",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "REMOVE",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "CHANGE",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "To use MySQL on your computer, you'll need",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Perl, PHP Or Java",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "FTP And Telnet",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Some Sort Of Client Program To Access The Databases",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "A Browser",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which of these is not a valid name for a column",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "To",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Near",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Far",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "From",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What does the WHERE SQL operator does:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "restricts the set of rows to the selection of those records for which the condition is true",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "converts the value of a column or function to a different type",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "changes the order of output rows",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "eliminates all row repeats from the result set",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Linux basic quiz",
+      "category": "Linux",
+      "description": "Answer some easy questions regarding Linux!",
+      "img": "img/linux.png",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "What is the login name of the administrator in Linux?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "root",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "administrator",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "admin",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "All of the mentioned",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "None of the mentioned",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which is the best tool to use for logging in remotely?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "rsh",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "ssh",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "telnet",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "login",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "How do we change permissions on files",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "chown",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "chmod",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "chattr",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "lsattr",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "We Can't change them",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Which of the following is a command in Linux?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "w",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "x",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "t",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "All of the Above",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "How can we find the process name from its process id? Assume the Proccess ID is 1",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "ps –p 1",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "find 1",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "top 1",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "get 1",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which of these commands let you view current jobs being handled by Shell?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "view",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "jobs",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "show",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "execute",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "What could be used to program additional authentication logic besides available authenticator modules?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Kube Vault",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Authentication Proxy",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "Kube Auth Service",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Kubernetes Role Manager",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command can be used to display basic information about your server?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "uname",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "info",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ls",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "show",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "You are logged in as a normal user and you see a file with 444(-r--r--r--) permission. Can you delete it with the `rm` command?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "We can't be certain, it depends on the permissions of the parent folder",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Yes, can delete it without a problem",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "No, we don't have the proper permissions",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "We can delete it only from the GUI but not from CLI.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Where are the online repositories configured on a Debian/Ubuntu Machine",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "/etc/apt/sources.list",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "/etc/apt/yum.repos",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "/etc/fstab",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "/etc/apt/repos",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "DevOps basic quiz",
+      "category": "DevOps",
+      "description": "Answer some easy questions regarding DevOps!",
+      "img": "img/devops.png",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "What language is an Ansible playbooks are written in by default?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "YAML format",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "JSON format",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "XML format",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "HTML format",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which of the following are core Kubernetes objects?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Pods, Services, Volumes",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Pods, Docker, Volumes",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Pods, Services, Droplets",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "None of the mentioned",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which Process Validates And Configures Data For The Api Objects Like Pods, Services?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "kube-apiserver process validates and configures data for the api objects.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "kube-apiserver process validates and configures data for the gui objects.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "kube-apiserver process validates and configures data for the cli objects.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "How to list all pods that are either labelled with env=development or with env=production",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "$ kubectl get pods -l 'env in (production, development)'",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "$ kubectl get pods 'env in (production, development)'",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Egress is incorrectly speed Ingress",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "false",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "true",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which Process Runs On Kubernetes Master Node?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Kube-cli-proxy process runs on Kubernetes master node.",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Kube-cli-server process runs on Kubernetes master node.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Kube-apiserver process runs on Kubernetes master node.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "At its core, Kubernetes is a platform for:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Provisioning machines (similar to Puppet, Ansible)",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Running and scheduling container applications on a cluster",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "Packaging software in containers",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "You can also get the Ansible documentation directly via your terminal by using:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "ansible-doc",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "ansible --doc",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ansible -d",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "ansible-documentation",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "This volume type can be used to share contents within containers in a pod, but will not persist beyond the life of a pod.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "EmptyDir",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Local",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ConfigMap",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "FlexVolume",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "The default Ansible inventory file is located at:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "/home/ansible/inventory",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "/etc/ansible/inventory",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "/home/ansible/hosts",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "/etc/ansible/hosts",
+              "correct": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Coding basic quiz",
+      "description": "Answer some easy questions regarding Coding!",
+      "img": "img/coding.png",
+      "category": "Code",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "Which of the following type of variables are whole numbers, without a decimal point, like 4195?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Integers",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Doubles",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Booleans",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Strings",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which of the following is correct about PHP?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "PHP is a recursive acronym for \"PHP: Hypertext Preprocessor\".",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "PHP is a server side scripting language that is embedded in HTML.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "All of the mentioned.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which artisan command will you used to enable maintenance mode in Laravel?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "php artisan maintenance",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "php artisan down",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "php artisan stop",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "php artisan pause",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What is Laravel?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Laravel is an open-source widely used PHP framework.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Laravel is an open-source widely used JavaScript framework.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Laravel is an open-source widely used Python framework.",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Laravel is an open-source widely used Ruby framework.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "How can you make A bulleted list with numbers?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "<dl>",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "<ul>",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "<ol>",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "<list>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Which of the following method can be used to create a MySql database using PHP?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "mysql_connect()",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "mysql_query()",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "mysql_close()",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "None of the mentioned",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "mysql_create()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Can we export data into an Excel file?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which artisan command would you use to create a new Laravel Model?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "php artisan create:model ModelName",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "php artisan model:make ModelName",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "php artisan model create ModelName",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "php artisan make:model ModelName",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "What type of a language is HTML?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Scripting Language",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Markup Language",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "Programming Language",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Network Protocol",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "How can we determine the number of rows returned in the result set of a MySQL query?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "The function mysqli_get_rows() returns the number of rows in a result set.",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "The function mysqli_num_rows() returns the number of rows in a result set.",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "The function mysqli_count_rows() returns the number of rows in a result set.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "title": "CMS basic quiz",
+      "category": "CMS",
+      "description": "Answer some easy questions regarding CMS!",
+      "img": "img/cms.png",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "Who developed WordPress?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "WordPress was co-founded by Allen Mullenweg and Luke Little on the 27th of June 2003.",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "WordPress was co-founded by Matt Mullenweg and Mike Little on the 27th of May 2003.",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "WordPress was co-founded by Andrew Mclean and Mike Hathaway on the 24th of May 2003.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "What are categories in WordPress.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Categories allow a user to divide its content into different sections.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Categories allow a user to merge its content from different sections.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Categories allow a user to list out all the contents",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "What is the difference between character 23 and x23?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "23 specifies the octal 23 and x23 determine the hex 23.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "23 specifies the hex 23 and x23 determine the octal 23",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What is the prefix of WordPress tables by default?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "wp_ default",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "wp_",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "wp_ in",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "_wp_",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What is the highest privilege user in Wordpress?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Contributer",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Author",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Editor",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Administrator",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "In which programming language WordPress is written?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Java",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Node",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "PHP",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "Javascript",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "VueJS",
+              "correct": false
+            },
+            {
+              "id": 6,
+              "option": "Python",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "What is Gravatar?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "A Plugin",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Globally Recognized Image or Photo",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "CMS",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Profile Image",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "WordPress core functionality",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "What is a Child Theme?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "The child theme is an extension of the sub-child theme",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "The child theme is an extension of the parent theme",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "The child theme is an extension of the super parent theme",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which CMS powers around 35% of all websites on the internet?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "WordPress",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Dropal",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Joomla",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Laravel",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "You can change your Wordpress themes using?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Wordpress Appearance",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Wordpress Settings",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Wordpress Plugins",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "wp-config.php file",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "title": "Mysql medium quiz",
+      "category": "MySQL",
+      "description": "Answer some difficult questions regarding MySQL!",
+      "img": "img/mysql.png",
+      "difficulty": "Medium",
+      "question": [
+        {
+          "id": 1,
+          "question": "In order to add a new column to an existing table in SQL, which command do we need to use?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "MODIFY TABLE",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "ALTER COLUMNS",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ALTER TABLE",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "EDIT TABLE",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "To use 'mysqldbcopy' which privileges are required on the source server?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "CREATE",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "UPDATE",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "SELECT",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "INSERT",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which function is used to get the current time in mysql?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "getTime()",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "NOW()",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "Time()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "MVD is known as",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Many Value Dependency",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "More Value Dependency",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Multi Value Dependency",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "All of the Above",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "The UNION command is used to combine result sets from more than one query into a single result set",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "MySQL comes with a standard client libraries for:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "C Only",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "PHP And C",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Perl,  Java And C",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Java Only",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which declaration doesn't use the same number of bytes and consumption of bytes depending on the input data?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Varchar",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "None Of The Mentioned",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Char",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Both Varchar And Char",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command will delete a table called 'test':",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "DROP TABLE test",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "DROP test",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "DROP test WHERE Confirm = \"YES\"",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "DELETE test WHERE Confirm = \"YES\"",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Which of the queries below will return 0 (false)?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "SELECT \"EXPERTRATING\" LIKE \"EXP%\"",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "SELECT \"EXPERTRATING\" LIKE \"Exp%\"",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "SELECT BINARY \"EXPERTRATING\" LIKE \"EXP%\"",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "SELECT BINARY \"EXPERTRATING\" LIKE \"Exp%\"",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "All those will return 1 (true)",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "INSERT keyword is used for:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "adding data",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "manage users",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "to select data",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "to change data",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "title": "Coding medium quiz",
+      "category": "Code",
+      "description": "Answer some dificult questions regarding Coding!",
+      "img": "img/coding.png",
+      "difficulty": "Medium",
+      "question": [
+        {
+          "id": 1,
+          "question": "Which function gives us the number of affected entries by a MySQL query?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "mysqli_affected_rows() return the number of entries affected by an SQL query.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "mysqli_rows() return the number of entries affected by an SQL query.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "mysqli_num_rows() return the number of entries affected by an SQL query.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "How can we start a PHP session:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "session_start()",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "start_session()",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "session()",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "startS()",
+              "correct": false
+            },
+            {
+              "id": 5,
+              "option": "sessionStart()",
+              "correct": false
+            },
+            {
+              "id": 6,
+              "option": "startSession()",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Which of the following is used to add multiple line comments in PHP ?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "//",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "/* */",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "{{ }}",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "{/ \\}",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "How to get current year in PHP ?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "year = date(\"Year\");",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "year = date(\"Y\");",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "year = $date_(\"Y\");",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "What is the function file_get_contents() used for?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "file_get_contents() is used for reading a file and storing it in a string variable.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "file_get_contents() is used for parsing a file and storing it in a string variable.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "file_get_contents() is used for processing a file and storing it in a string variable.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "To create a combo box (drop down box) which tag will you use?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "<select>",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "<list>",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "<input type=\"dropdown\">",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "all of above",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which functions can be used to get the image's properties (size, width, and height)?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "The functions are  getimagesize() for size, imagesx() for width and imagesy() for height.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "The functions are getimagesizeof() for size, imagesxn() for width and imagesyn() for height.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "The functions are  getsizeimage() for size, imagesx() for width and imagesy() for height.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "When you need to obtain the ASCII value of a character which of the following function you'll need to use in PHP?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "chr( );",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "val( );",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ord( );",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": ".asc( );",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "title": "Linux medium quiz",
+      "category": "Linux",
+      "description": "Answer some difficult questions regarding Linux!",
+      "img": "img/linux.png",
+      "difficulty": "Easy",
+      "question": [
+        {
+          "id": 1,
+          "question": "When looking for all the processes running on a Linux system, what command should you use?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "service",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "oterm",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ps",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "xrun",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Which key combination can yank a line in vi?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "yw",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "yc",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "yy",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "yl",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "In Linux, the priority of a running process can be changed using which command?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "priority",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "renice",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "ps -A",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "passwd",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "What does the /etc/hosts file contains?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Hostnames of all devices on the network segment",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "The IP address of the default gateway",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "CPU and memory info",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "IP addresses to hostnames mappings",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What is inode?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "A file is given a unique number by OS and is called as inode.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "A directory is given a unique number by OS and is called as inode.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "A file is given a predifined number by OS and is called as inode.",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "A directory is given a predifined number by OS and is called as inode.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Crontab gives administrators the ability to do what?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Identify users on the system",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Call up a list of open files",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "View the status of Linux kernel modules",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Set up scheduled tasks on a system",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which command is used to print the directory stack?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "popd",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "dir",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "ls -d",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "dirs",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Which command is used to display the default permissions for newly created files?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "umask",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "priority",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "nice",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "perm",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What is the purpose of ‘at’ command?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "To execute a command/commands at a specific time.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "To execute a command/commands at a specific request.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "To execute a command/commands on a specific condition.",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "To execute a command/commands only when the user has logged in.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "title": "DevOps medium quiz",
+      "description": "Answer some difficult questions regarding DevOps!",
+      "img": "img/devops.png",
+      "category": "DevOps",
+      "difficulty": "Medium",
+      "question": [
+        {
+          "id": 1,
+          "question": "What is the role of kube-apiserver and kube-scheduler?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "The kube – apiserver follows the scale-out architecture and, is the front-end of the master node control panel.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "The kube – apiserver follows the scale-out architecture and, is the back-end of the master node control panel.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "How do you create secrets in Kubernetes?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl create secret generic db-user-pass --from-file=./username.txt --from-file=./password.txt",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "kubectl generate secret generic db-user-pass --from-file=./username.txt --from-file=./password.txt",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "What used to be called a minion in Kubernetes cluster?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "A component of the master node.",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "A monitoring engine used widely in Kubernetes.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Docker container service.",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "A worker node.",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Kubernetes helps in the effective distribution of resources by allocating the resources that are used by a particular application",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What are the different components of Kubernetes Architecture?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "The Kubernetes Architecture has mainly 2 components – the master node and the worker node.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "The Kubernetes Architecture has mainly 2 components – the service and the worker path.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "Kubernetes Manifests can be in JSON or YAML format",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "Which of the following commands would show you the status of a Kubernetes deployment?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "kubectl rollout stats deployment/Deployment",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "kubectl rollout status deployment/Deployment",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "kubectl rollout log deployment/Deployment",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "How to define a service without a selector?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Specify the external name",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Specify an endpoint with IP",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Address and port Just by specifying the IP address",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Specifying the label and api-version",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "What is kubectl drain used for?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "To safely evict all of your pods from a node before performing maintenance on the node",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "To stop all running containers in a pod",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "To get the status of a specific node during maintenance",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "What Are Kubernetes Controllers?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Kubernetes controllers are Replicaset, Deployment controller.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Kubernetes controllers are Surverless, Deployment capacitor.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "title": "Docker medium quiz",
+      "description": "Answer some difficult questions regarding Docker!",
+      "img": "img/docker.png",
+      "category": "Docker",
+      "difficulty": "Medium",
+      "question": [
+        {
+          "id": 1,
+          "question": "Containers running on a single machine all share the same operating system kernel, so they start instantly and make more efficient use of RAM.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "Docker containers and images are included in Plesk Backup and migrated by Plesk Migrator.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "How to scale a service to 7 replicas in Docker Swarm?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "docker service scale name_of_your_service_here=7",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "docker service replica-set name_of_your_service_here=7",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "docker service update name_of_your_service_here=7",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "docker service upgrade name_of_your_service_here=7",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Is there a hard limit for the number of containers that you can run and if there is which is number of total containers that you can run?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Even though there is no limit of containers that can run on Docker, hardware limitations come into the picture.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "5",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "2",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "Once you’ve worked with an image, how do you push it to docker hub?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "$ docker push <username image name>",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "$ docker push <username/image name>",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "$ docker --push <username image name>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 6,
+          "question": "How do you create a docker container from an image?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "docker run -it -d <image_name>",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "docker --run -it -d <image_name>",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "docker run it d <image_name>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "How to delete an image from the local storage system?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "$ docker rmi <image-id>",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "$ docker --rmi <image-id>",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "$ docker rmin <imageid>",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "On which of the following systems can minikube be installed on? Select one.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Linux",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Windows",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "macOS",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "All of the mentioned",
+              "correct": true
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "Containers include the application and all of its dependencies, but share the kernel with other containers. They run as an isolated process in userspace on the host operating system.",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "True",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "False",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "Following Docker command: eval $(docker-machine env default)  is used to:",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Activate default VM machine",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Build an image",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Access a running container",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "Commit changes done in a Docker image",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "title": "CMS medium quiz",
+      "description": "Answer some difficult questions regarding CMS!",
+      "img": "img/cms.png",
+      "category": "CMS",
+      "difficulty": "Medium",
+      "question": [
+        {
+          "id": 1,
+          "question": "What are meta-tags?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Meta-tags are keywords and description used to display website or page information.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Meta-tags are codes and scripts used to display website or page information.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Meta-tags are special tages and function used to display website or page information.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 2,
+          "question": "What is a WordPress taxonomy?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "In WordPress, a “taxonomy” is a grouping mechanism for some posts (or links or custom post types).",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "In WordPress, a “taxonomy” is a grouping mechanism for some plugins .",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "In WordPress, a “taxonomy” is a grouping mechanism for some pages .",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 3,
+          "question": "Why is wordpress.com considered more secure than wordpress.org?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "because they limit the themes and also does not allow installing plugins.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "because it is SSL encrypted",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "because they limit the site proxy settings",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 4,
+          "question": "Which licensing authority is responsible for WordPress?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "GPLv2 (GNU General Public License)",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "MIT license",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "GPU",
+              "correct": false
+            },
+            {
+              "id": 4,
+              "option": "GWPL",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 5,
+          "question": "What is the best way to change table prefix (wp_) before installation in WordPress?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Before Installation: In this way, you have to rename your wp_config.php file according to your need through $table_prefix=’wp_’;.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Before Installation: Through this way, you have to go PHPMyAdmin -> Select your database -> Check all tables -> Add/Update table prefix.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "After Installation: Once you have the database, you can go ahead and change it",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 7,
+          "question": "How can you call a constructor for a parent class?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "Parents:: constructor($value)",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "Parents:: call_constructor($value)",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Parents:: call($value)",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 8,
+          "question": "Where is WordPress content stored?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "WordPress stores it's content in a MySQL database on the server.",
+              "correct": true
+            },
+            {
+              "id": 2,
+              "option": "WordPress stores it's content in the wp-content folder",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "WordPress stores it's content in a MySQL database on the server.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 9,
+          "question": "What is the difference between WordPress Posts and Pages?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "There is no difference between Posts and Pages.",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "Posts are entries listed in reverse chronological order on the site homepage and Pages are static and are not listed by date.",
+              "correct": false
+            },
+            {
+              "id": 3,
+              "option": "Pages are entries listed in reverse chronological order on the site homepage and Posts are static and are not listed by date.",
+              "correct": true
+            },
+            {
+              "id": 4,
+              "option": "None of the above.",
+              "correct": false
+            }
+          ]
+        },
+        {
+          "id": 10,
+          "question": "How can you edit a WordPress comment?",
+          "multiple": false,
+          "option": [
+            {
+              "id": 1,
+              "option": "You can edit WordPress comment using the command. From the panel, under the Comments option, select edit to edit a comment.",
+              "correct": false
+            },
+            {
+              "id": 2,
+              "option": "You can edit WordPress comment using the dashboard. From the panel, under the Comments option, select edit to edit a comment.",
+              "correct": true
+            },
+            {
+              "id": 3,
+              "option": "You can edit WordPress comment using the profile. From the panel, under the Comments option, select edit to edit a comment.",
+              "correct": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

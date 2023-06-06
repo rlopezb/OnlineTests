@@ -1,0 +1,26 @@
+.navbar {
+    color: black;
+    font-weight: bold;
+}
+
+.card-img-top {
+    padding: 1rem;
+    height: 10rem;
+    object-fit: scale-down;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.quiz-banner-img {
+    padding: 1rem;
+    width: 16rem;
+    max-height: 100px;
+    object-fit: scale-down;
+}
+
