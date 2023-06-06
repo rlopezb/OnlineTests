@@ -11,6 +11,8 @@ function Question(props) {
     let initialSelection = selections.find(s => s.questionId === props.question.id);
     if (initialSelection) {
       setSelection(initialSelection.selectionId);
+    }else{
+      setSelection({});
     }
   }, [props.question.id, selections]);
 

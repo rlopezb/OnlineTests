@@ -11,14 +11,14 @@ function QuizCard(props) {
     return dispatch => {
       axios.get("http://localhost:8080/quiz/" + props.quiz.id)
           .then(result => {
-            dispatch({type: "SET_QUIZ", payload: result.data})
-            dispatch({type: 'SET_STEP', payload: 1})
+            dispatch({type: "CLEAR_QUIZ"});
+            dispatch({type: "SET_QUIZ", payload: result.data});
+            dispatch({type: 'SET_STEP', payload: 1});
             navigate('/quiz');
           })
           .catch(error => {
             console.log(error);
           });
-
     };
   }
 

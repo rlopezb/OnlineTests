@@ -13,6 +13,8 @@ function reducer(state = initialState, action) {
   switch (action.type) {
     case 'SET_QUIZZES':
       return {...state, quizzes: action.payload};
+    case 'CLEAR_QUIZ':
+      return {...state, ...{quiz: {}, selections: [], answers: []}};
     case 'SET_QUIZ':
       let quiz = state.quizzes.find(q => q.id === action.payload.id);
       quiz.question = action.payload.question;
@@ -34,6 +36,8 @@ function reducer(state = initialState, action) {
       }
     case 'SET_SELECTIONS':
       return {...state, selections: action.payload};
+    case 'CLEAR_SELECTIONS':
+      return {...state, selections: []};
     case 'SET_ANSWERS':
       return {...state, answers: action.payload};
     case 'SET_STEP':

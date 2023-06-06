@@ -6,15 +6,20 @@ import {useNavigate} from "react-router-dom";
 function Quiz() {
   const navigate = useNavigate();
   let quiz = useSelector(gs => gs.quiz);
+  let selections = useSelector(gs => gs.selections);
   let dispatch = useDispatch();
 
-  let onSubmit = () => {
+  let onNext = () => {
     dispatch({type: 'SET_STEP', payload: 2})
     navigate('/review');
   };
   let onClear = () => {
+    dispatch({type: "CLEAR_SELECTIONS"});
+    dispatch({type: 'SET_STEP', payload: 1})
   };
-  let onCancel = () => {
+  let onBack = () => {
+    dispatch({type: 'SET_STEP', payload: 0})
+    navigate('/home');
   };
   return <Container>
     <Row>
@@ -31,12 +36,12 @@ function Quiz() {
     })}
     <Row className="my-3">
       <Col>
-        <Button className="mx-2" variant="primary" onClick={onSubmit}>Submit</Button>
+        <Button className="mx-2" variant="primary" onClick={onNext} disabled={selections.length!==quiz.question.length}>Next</Button>
         <Button className="mx-2" variant="secondary" onClick={onClear}>Clear</Button>
-        <Button className="mx-2" variant="danger" onClick={onCancel}>Cancel</Button>
+        <Button className="mx-2" variant="danger" onClick={onBack}>Back</Button>
       </Col>
     </Row>
-  </Container>
+  </Container>;
 }
 
 export default Quiz;
