@@ -1,0 +1,500 @@
+./App.js
+import './style/App.css';
+import 'react-toastify/dist/ReactToastify.css';
+
+import AppNavBar from "./components/AppNavBar";
+import AppRouter from "./router/AppRoutes";
+import {Container} from "react-bootstrap";
+import {ToastContainer} from "react-toastify";
+
+function App() {
+  return (
+      <Container>
+        <ToastContainer/>
+        <AppNavBar/>
+        <AppRouter/>
+      </Container>
+  );
+}
+
+export default App;
+./components/AppNavBar.js
+import {Container, Nav, Navbar} from "react-bootstrap";
+import {Link} from "react-router-dom";
+import {useSelector} from "react-redux";
+
+function AppNavBar() {
+  let step = useSelector(gs => gs.step);
+
+  return (
+      <Navbar className={"py-4"}>
+        <Container>
+          <Navbar.Brand>Online tests</Navbar.Brand>
+          <Nav className="me-auto" activeKey="home">
+            <Nav.Link as={Link} to="home">Home</Nav.Link>
+            <Nav.Link as={Link} to="quiz" disabled={step < 1}>Quiz</Nav.Link>
+            <Nav.Link as={Link} to="review" disabled={step < 2}>Review</Nav.Link>
+            <Nav.Link as={Link} to="results" disabled={step < 3}>Results</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>);
+}
+
+export default AppNavBar;
+./components/Check.js
+import {Alert} from "react-bootstrap";
+
+function Check(props) {
+  return <div>
+    <h6 className="mt-4">{props.question.id + ".- " + props.question.question}</h6>
+    <div className="mx-4">
+      {props.question.option.map(o => {
+        if (props.selection.selectionId === props.answer.correctAnswer && o.id === props.selection.selectionId) {
+          return <Alert key={o.id} className="m-0 py-0" variant="success">{o.option}</Alert>;
+        } else if (o.id === props.selection.selectionId) {
+          return <Alert key={o.id} className="m-0 py-0" variant="danger">{o.option}</Alert>;
+        } else {
+          return <Alert key={o.id} className="m-0 py-0 border-0 bg-white" variant="light">{o.option}</Alert>;
+        }
+      })}
+    </div>
+  </div>;
+}
+
+export default Check;
+./components/Question.js
+import Form from 'react-bootstrap/Form';
+import {useEffect, useState} from "react";
+import {useDispatch, useSelector} from "react-redux";
+
+function Question(props) {
+  let dispatch = useDispatch();
+  let selections = useSelector(gs => gs.selections);
+  let [selection, setSelection] = useState({});
+
+  useEffect(()=>{
+    let initialSelection = selections.find(s => s.questionId === props.question.id);
+    if (initialSelection) {
+      setSelection(initialSelection.selectionId);
+    }else{
+      setSelection({});
+    }
+  }, [props.question.id, selections]);
+
+
+  const handleSelection = (event) => {
+    setSelection(+event.target.value);
+    dispatch({type: "SET_SELECTION", payload: {questionId: props.question.id, selectionId: +event.target.value}});
+  }
+
+  return <div>
+    <h6 className="mt-4">{props.question.id + ".- " + props.question.question}</h6>
+    <div className="mx-4">
+      {props.question.option.map(o => (
+          <Form.Check value={o.id} key={o.id} label={o.option} name={props.question.id} type="radio" id={o.id}
+                      onChange={(event) => handleSelection(event)}
+                      checked={selection === o.id}/>
+      ))}
+    </div>
+  </div>;
+}
+
+export default Question;
+./components/QuizCard.js
+import {Button, Card} from "react-bootstrap";
+import {useNavigate} from "react-router-dom";
+import axios from "axios";
+import {useDispatch} from "react-redux";
+import {toast} from "react-toastify";
+
+function QuizCard(props) {
+  const navigate = useNavigate();
+  let dispatch = useDispatch();
+
+  let selectQuiz = function () {
+    return dispatch => {
+      axios.get("http://localhost:8080/quiz/" + props.quiz.id)
+          .then(result => {
+            dispatch({type: "CLEAR_QUIZ"});
+            dispatch({type: "SET_QUIZ", payload: result.data});
+            dispatch({type: 'SET_STEP', payload: 1});
+            navigate('/quiz');
+          })
+          .catch(error => {
+            toast.error(error.message);
+          });
+    };
+  }
+
+  return <Card style={{width: '18rem'}} className={"shadow"}>
+    <Card.Img variant="top" src={props.quiz.img} className={"shadow"}/>
+    <Card.Body>
+      <Card.Title>{props.quiz.title}</Card.Title>
+      <Card.Text>
+        {props.quiz.description}
+      </Card.Text>
+      <Button variant="primary" onClick={() => dispatch(selectQuiz())}>Take the quiz!</Button>
+    </Card.Body>
+  </Card>
+}
+
+export default QuizCard;
+./index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import {BrowserRouter} from "react-router-dom";
+import store from "./store/store";
+import {Provider} from "react-redux";
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+import './style/index.css';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+      <BrowserRouter>
+        <Provider store={store}>
+          <App/>
+        </Provider>
+      </BrowserRouter>
+);
+./pages/Home.js
+import {useDispatch, useSelector} from "react-redux";
+import QuizCard from "../components/QuizCard";
+import {useEffect} from "react";
+import {Col, Container, Row} from "react-bootstrap";
+import axios from "axios";
+import {toast} from "react-toastify";
+
+function Home() {
+  let quizzes = useSelector(gs => gs.quizzes);
+  let dispatch = useDispatch();
+  let getQuizzes = function () {
+    return dispatch => {
+      axios.get("http://localhost:8080/list")
+          .then(result => {
+            dispatch({type: "SET_QUIZZES", payload: result.data});
+          })
+          .catch(error => {
+            toast.error(error.message);
+          });
+    };
+  }
+  useEffect(()=>dispatch(getQuizzes()), [dispatch]);
+
+  return (
+      <div>
+        <Container>
+          <Row className={"gy-5"}>
+            {quizzes.map(q => <Col key={q.id}><QuizCard quiz={q}/></Col>)}
+          </Row>
+        </Container>
+      </div>);
+}
+
+export default Home;
+./pages/Quiz.js
+import {useDispatch, useSelector} from "react-redux";
+import {Button, Col, Container, Row} from "react-bootstrap";
+import Question from "../components/Question";
+import {Navigate, useNavigate} from "react-router-dom";
+import {toast} from "react-toastify";
+
+function Quiz() {
+  const navigate = useNavigate();
+  let quiz = useSelector(gs => gs.quiz);
+  let selections = useSelector(gs => gs.selections);
+  let dispatch = useDispatch();
+
+  if (Object.keys(quiz).length === 0 && quiz.constructor === Object) {
+    toast.error("No quiz selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+
+
+  let onNext = () => {
+    dispatch({type: 'SET_STEP', payload: 2})
+    navigate('/review');
+  };
+  let onClear = () => {
+    dispatch({type: "CLEAR_SELECTIONS"});
+    dispatch({type: 'SET_STEP', payload: 1})
+  };
+  let onBack = () => {
+    dispatch({type: 'SET_STEP', payload: 0})
+    navigate('/home');
+  };
+  return <Container>
+    <Row>
+      <Col className={"col-md-auto"}>
+        <img src={quiz.img} alt="" className={"quiz-banner-img"}/>
+      </Col>
+      <Col className={"my-auto"}>
+        <h6>{quiz.title}</h6>
+        <p>{quiz.description}</p>
+      </Col>
+    </Row>
+    {quiz.question.map(q => {
+      return <Row key={q.id}><Question question={q}/></Row>;
+    })}
+    <Row className="my-3">
+      <Col>
+        <Button className="mx-2" variant="primary" onClick={onNext}
+                disabled={selections.length !== quiz.question.length}>Next</Button>
+        <Button className="mx-2" variant="secondary" onClick={onClear}>Clear</Button>
+        <Button className="mx-2" variant="danger" onClick={onBack}>Back</Button>
+      </Col>
+    </Row>
+  </Container>;
+}
+
+export default Quiz;
+
+./pages/Results.js
+import {Button, Col, Container, Row} from "react-bootstrap";
+import {useDispatch, useSelector} from "react-redux";
+import Check from "../components/Check";
+import {Navigate, useNavigate} from "react-router-dom";
+import {useEffect} from "react";
+import {toast} from "react-toastify";
+
+function Results() {
+  let quiz = useSelector(gs => gs.quiz);
+  let selections = useSelector(gs => gs.selections);
+  let answers = useSelector(gs => gs.answers);
+  const navigate = useNavigate();
+  let dispatch = useDispatch();
+
+  if (Object.keys(quiz).length === 0 && quiz.constructor === Object) {
+    toast.error("No quiz selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+  if (selections.length === 0) {
+    toast.error("No answers selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+  if (answers.length === 0) {
+    toast.error("No answers retrieved");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+
+  let onFinish = () => {
+    dispatch({type: 'SET_STEP', payload: 0})
+    dispatch({type: "CLEAR_QUIZ"});
+    navigate('/home');
+  };
+  return <Container>
+    <Row>
+      <Col className={"col-md-auto"}>
+        <img src={quiz.img} alt="" className={"quiz-banner-img"}/>
+      </Col>
+      <Col className={"my-auto"}>
+        <h6>{quiz.title}</h6>
+        <p>{quiz.description}</p>
+      </Col>
+    </Row>
+    {quiz.question.map(q => {
+      let selection = selections.find(s => s.questionId === q.id);
+      let answer = answers.question.find(a => a.id === q.id);
+      return <Row key={q.id}><Check question={q} selection={selection} answer={answer}/></Row>;
+    })}
+    <Row className="my-3">
+      <Col>
+        <Button className="mx-2" variant="primary" onClick={onFinish}>Finish</Button>
+      </Col>
+    </Row>
+  </Container>;
+}
+
+export default Results;
+./pages/Review.js
+import axios from "axios";
+import {Navigate, useNavigate} from "react-router-dom";
+import {useDispatch, useSelector} from "react-redux";
+import {Button, Col, Container, Row} from "react-bootstrap";
+import {toast} from "react-toastify";
+import {useEffect} from "react";
+
+function Review() {
+  let quiz = useSelector(gs => gs.quiz);
+  let selections = useSelector(gs => gs.selections);
+  const navigate = useNavigate();
+  let dispatch = useDispatch();
+
+  if (Object.keys(quiz).length === 0 && quiz.constructor === Object) {
+    toast.error("No quiz selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+  if (selections.length === 0) {
+    toast.error("No answers selected");
+    dispatch({type: 'SET_STEP', payload: 0});
+    return <Navigate to="/home"/>;
+  }
+
+  let getAnswers = function () {
+    return dispatch => {
+      axios.get("http://localhost:8080/answer/" + quiz.id)
+          .then(result => {
+            dispatch({type: "SET_ANSWERS", payload: result.data});
+            dispatch({type: 'SET_STEP', payload: 3})
+            navigate('/results');
+          })
+          .catch(error => {
+            toast.error(error.message);
+          });
+    };
+  };
+
+  let onBack = () => {
+    dispatch({type: 'SET_STEP', payload: 1})
+    navigate('/quiz');
+  };
+
+  return <Container>
+    <Row>
+      <Col className={"col-md-auto"}>
+        <img src={quiz.img} alt="" className={"quiz-banner-img"}/>
+      </Col>
+      <Col className={"my-auto"}>
+        <h6>{quiz.title}</h6>
+        <p>{quiz.description}</p>
+      </Col>
+    </Row>
+    {quiz.question.map(q => {
+      let questionId = q.id;
+      let question = q.question;
+      let options = q.option;
+      let selection = selections.find(s => s.questionId === questionId);
+      let selectionId = selection.selectionId;
+      let selected = options.find(o => o.id === selectionId);
+      return <Row key={q.id}>
+        <h6 className="mt-4">{questionId + ".- " + question}</h6>
+        <i>Selected answer: {selected.id}.- {selected.option}</i>
+      </Row>;
+    })}
+    <Row className="my-3">
+      <Col>
+        <Button className="mx-2" variant="primary" onClick={() => dispatch(getAnswers())}>Next</Button>
+        <Button className="mx-2" variant="secondary" onClick={onBack}>Back</Button>
+      </Col>
+    </Row>
+  </Container>
+}
+
+export default Review;
+./router/AppRoutes.js
+import {Route, Routes} from "react-router-dom";
+import Home from "../pages/Home";
+import Quiz from "../pages/Quiz";
+import Review from "../pages/Review";
+import Results from "../pages/Results";
+
+function AppRouter(){
+  return <Routes>
+    <Route path='/home' element={<Home/>}/>
+    <Route path='/quiz' element={<Quiz/>}/>
+    <Route path='/review' element={<Review/>}/>
+    <Route path='/results' element={<Results/>}/>
+  </Routes>;
+}
+
+export default AppRouter;
+./store/store.js
+import {applyMiddleware, legacy_createStore as createStore} from 'redux';
+import thunk from "redux-thunk";
+
+let initialState = {
+  step: 0,
+  quizzes: [],
+  quiz: {},
+  selections: [],
+  answers: []
+};
+
+function reducer(state = initialState, action) {
+  switch (action.type) {
+    case 'SET_QUIZZES':
+      return {...state, quizzes: action.payload};
+    case 'CLEAR_QUIZ':
+      return {...state, ...{quiz: {}, selections: [], answers: []}};
+    case 'SET_QUIZ':
+      let quiz = state.quizzes.find(q => q.id === action.payload.id);
+      quiz.question = action.payload.question;
+      return {...state, quiz: quiz};
+    case 'SET_SELECTION':
+      let index = state.selections.findIndex(s => s.questionId === action.payload.questionId);
+      if (index >= 0) {
+        const newSelections = state.selections.map((selection) => {
+          if (action.payload.questionId === selection.questionId) {
+            return action.payload;
+          } else {
+            return selection;
+          }
+        });
+        return {...state, selections: newSelections};
+      } else {
+        const newSelections = [...state.selections, action.payload];
+        return {...state, selections: newSelections};
+      }
+    case 'SET_SELECTIONS':
+      return {...state, selections: action.payload};
+    case 'CLEAR_SELECTIONS':
+      return {...state, selections: []};
+    case 'SET_ANSWERS':
+      return {...state, answers: action.payload};
+    case 'SET_STEP':
+      return {...state, step: action.payload};
+    default:
+      return state;
+  }
+}
+
+let store = createStore(reducer, applyMiddleware(thunk));
+
+export default store;
+./style/App.css
+.navbar {
+    color: black;
+    font-weight: bold;
+}
+
+.card-img-top {
+    padding: 1rem;
+    height: 10rem;
+    object-fit: scale-down;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+.card {
+    transition: transform 0.2s ease;
+}
+
+.quiz-banner-img {
+    padding: 1rem;
+    width: 16rem;
+    max-height: 100px;
+    object-fit: scale-down;
+}
+
+./style/index.css
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
